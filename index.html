@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daycomp percetakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="assets/logo-daycomp.png" alt="Daycomp Printing Logo" class="h-10 w-auto">
+                        <span class="ml-2 text-xl font-bold text-red-400">Daycomp Percetakan</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="nav-link text-gray-700 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#services"
+                        class="nav-link text-gray-700 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium">Layanan</a>
+                    <a href="#about"
+                        class="nav-link text-gray-700 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium">Tentang</a>
+                    <a href="#portfolio"
+                        class="nav-link text-gray-700 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                    <a href="#testimonials"
+                        class="nav-link text-gray-700 hover:text-red-400 px-3 py-2 rounded-md text-sm font-medium">Testimoni</a>
+                    <a href="#contact"
+                        class="bg-red-400 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition duration-300">Kontak
+                        Kami</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-red-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-400 hover:bg-gray-50">Home</a>
+                <a href="#services"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-400 hover:bg-gray-50">Layanan</a>
+                <a href="#about"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-400 hover:bg-gray-50">Tentang
+                    Kami</a>
+                <a href="#portfolio"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-400 hover:bg-gray-50">Portfolio</a>
+                <a href="#testimonials"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-400 hover:bg-gray-50">Testimoni</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-white bg-red-400 hover:bg-red-700">Kontak
+                    Kami
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-24 pb-20 md:pt-32 md:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 slide-up">Your Trusted
+                        Printing Partner</h1>
+                    <p class="text-lg md:text-xl mb-8 slide-up" style="animation-delay: 0.2s;">High-quality printing
+                        services tailored to your business needs. Fast, reliable, and affordable solutions.</p>
+                    <div class="flex space-x-4 slide-up" style="animation-delay: 0.4s;">
+                        <a href="#contact"
+                            class="bg-white text-red-400 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Get
+                            a Quote</a>
+                        <a href="#services"
+                            class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-red-400 transition duration-300">Our
+                            Services</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center scale-in">
+                    <img src="assets/dayHero.jpg" alt="Printing Services"
+                        class="rounded-lg shadow-xl max-w-full h-auto animate-bounce-slow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="counter p-6" data-target="1590">
+                    <div class="text-4xl font-bold text-red-400 mb-2">0</div>
+                    <div class="text-gray-600">Projects Completed</div>
+                </div>
+                <div class="counter p-6" data-target="98" data-suffix="%">
+                    <div class="text-4xl font-bold text-red-400 mb-2">0</div>
+                    <div class="text-gray-600">Client Satisfaction</div>
+                </div>
+                <div class="counter p-6" data-target="250">
+                    <div class="text-4xl font-bold text-red-400 mb-2">0</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="counter p-6" data-target="8">
+                    <div class="text-4xl font-bold text-red-400 mb-2">0</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 slide-up">Layanan</h2>
+                <div class="w-20 h-1 bg-red-400 mx-auto mb-6 slide-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto slide-up" style="animation-delay: 0.4s;">Kami melayani
+                    berbagai kebutuhan percetakan anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400 border border-transparent slide-up"
+                    style="animation-delay: 0.2s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-print text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pencetakan offset</h3>
+                    <p class="text-gray-600 mb-4">Pencetakan offset berkualitas tinggi untuk proyek volume besar dengan
+                        konsisten
+                        reproduksi warna.</p>
+
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400border border-transparent slide-up"
+                    style="animation-delay: 0.4s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-digital-tachograph text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pencetakan Digital</h3>
+                    <p class="text-gray-600 mb-4">Percetakan digital dengan waktu penyelesaian cepat untuk produksi
+                        dalam jumlah sedikit, data variabel, dan cetakan yang dipersonalisasi. </p>
+
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400 border border-transparent slide-up"
+                    style="animation-delay: 0.6s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-box-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Packaging</h3>
+                    <p class="text-gray-600 mb-4">Custom packaging solutions that protect your products and enhance
+                        brand recognition.</p>
+
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400 border border-transparent slide-up"
+                    style="animation-delay: 0.2s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-sign text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Signage & Displays</h3>
+                    <p class="text-gray-600 mb-4">Eye-catching signage and display solutions for retail, events, and
+                        corporate environments.</p>
+
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400 border border-transparent slide-up"
+                    style="animation-delay: 0.4s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-book-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Book Printing</h3>
+                    <p class="text-gray-600 mb-4">Professional book printing services for authors, publishers, and
+                        educational institutions.</p>
+
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-lg shadow-md transition duration-300 hover:border-red-400 border border-transparent slide-up"
+                    style="animation-delay: 0.6s;">
+                    <div class="text-red-400 mb-4">
+                        <i class="fas fa-tshirt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Promotional Items</h3>
+                    <p class="text-gray-600 mb-4">Custom branded merchandise to promote your business at events and
+                        trade shows.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
+                    <img src="assets/image/teams.jpg" alt="About Daycomp Printing"
+                        class="rounded-lg shadow-xl w-full slide-up">
+                </div>
+                <div class="md:w-1/2 md:pl-12 slide-up" style="animation-delay: 0.2s;">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
+                    <div class="w-20 h-1 bg-red-400 mb-6"></div>
+                    <p class="text-gray-600 mb-6">Didirikan pada tahun 2017, Daycomp Percetakan telah berkembang menjadi
+                        penyedia layanan percetakan berkualitas tinggi terkemuka di wilayah Kudus. Komitmen kami
+                        terhadap keunggulan dan kepuasan pelanggan telah membuat kami mendapatkan reputasi atas
+                        keandalan dan kualitas.</p>
+                    <p class="text-gray-600 mb-8">Kami memadukan keahlian tradisional dengan teknologi mutakhir untuk
+                        memberikan hasil yang luar biasa bagi bisnis dari segala ukuran. Tim profesional kami yang
+                        berpengalaman berdedikasi untuk membantu Anda mencapai tujuan pencetakan Anda.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-red-400">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Peralatan cetak yang canggih</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-red-400">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Solusi pencetakan ramah lingkungan</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-red-400">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Waktu penyelesaian yang cepat</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div
+                                    class="flex items-center justify-center h-6 w-6 rounded-full bg-blue-100 text-red-400">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-600">Harga yang terjangkau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 slide-up">Portofolio Kami</h2>
+                <div class="w-20 h-1 bg-red-400 mx-auto mb-6 slide-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto slide-up" style="animation-delay: 0.4s;">Jelajahi
+                    beberapa
+                    dari proyek terbaru kami dan melihat kualitas pekerjaan kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in">
+                    <img src="assets/image/1.jpg" alt="Brochure Printing"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Undangan</h3>
+                        <p class="text-gray-600">Pencetakan undangan sesuai desain yang diinginkan pelanggan.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in"
+                    style="animation-delay: 0.2s;">
+                    <img src="assets/image/xbanner.webp" alt="Packaging Design"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Banner</h3>
+                        <p class="text-gray-600">Mampu mencetak banner sesuai desain yang diinginkan serta kualitas yang
+                            bagus.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in"
+                    style="animation-delay: 0.4s;">
+                    <img src="assets/image/Brosur.jpg" alt="Event Signage"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Brosur</h3>
+                        <p class="text-gray-600">Mencetak brosur dengan desain serta kualitas yang diinginkan pelanggan.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in">
+                    <img src="https://down-id.img.susercontent.com/file/5ef11075d90e1121c56aa4e713135746" alt="Stiker"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stiker Berkualitas</h3>
+                        <p class="text-gray-600">Stiker dengan berbagai pilihan serta kualitas yang diinginkan.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in"
+                    style="animation-delay: 0.2s;">
+                    <img src="https://cloudprint.uk/wp-content/uploads/2023/06/Business-card.jpg" alt="Business Cards"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Kartu Bisnis</h3>
+                        <p class="text-gray-600">Kartu bisnis dengan desain Premium dan kualitas yang bagus.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300 fade-in"
+                    style="animation-delay: 0.4s;">
+                    <img src="https://www.maestroprinting.com/liteprint/application/liteprint/maestro/assets/product_image/1565088476268-IMG_1457eds.jpg"
+                        alt="Promotional Items"
+                        class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                    <div class="p-6 bg-white">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hangtag</h3>
+                        <p class="text-gray-600">Pencetakan hangtag custom.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 slide-up">Klien Kami</h2>
+                <div class="w-20 h-1 bg-red-400 mx-auto mb-6 slide-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto slide-up" style="animation-delay: 0.4s;">Jangan hanya
+                    Ambil kata-kata kami untuk itu, dengarlah dari beberapa pelanggan kami yang puas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-md slide-up"
+                    style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWLWr-SyKUINZywo02dnRI3cQy7SwKsiumMer_y1bX7SRVwfO7c=w72-h72-p-rp-mo-br100"
+                                alt="Client" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-800">Anwar Syahrul</h4>
+
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Puas sekali dengan hasil cetaknya.. Bagus dan prosesnya cepat,
+                        harga juga terjangkau.. Sukses selalu daycomp"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-md slide-up"
+                    style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUWVeiVLYfyvlKKEivElpMUB5QJCy5fKeV4FPYC3QMIrBRmdC8d=w72-h72-p-rp-mo-br100"
+                                alt="Client" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-800">Ary Wibowo</h4>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Pelayanan sangat ramah dan friendly, siphh dah daycomp👍👍 …"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-lg shadow-md slide-up"
+                    style="animation-delay: 0.6s;">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW2hY46kYdLZyvVlh4hMvqZAvk0lZXm7nv3aBxINs2kXcBKsI_n=w72-h72-p-rp-mo-br100"
+                                alt="Client" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-bold text-gray-800">Adi Zainal Abidin</h4>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Mantap sekali kualitas serta pelayanannya, maju terus Daycomp"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-red-400 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 slide-up">Siap memulai proyek pencetakan Anda?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto slide-up" style="animation-delay: 0.2s;">Dapatkan penawaran yang
+                menarik hari ini dan
+                Temukan bagaimana kami dapat menghidupkan visi Anda dengan layanan pencetakan premium kami.</p>
+            <div class="slide-up" style="animation-delay: 0.4s;">
+                <a href="#contact"
+                    class="inline-block bg-white text-red-400 px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition duration-300">Minta
+                    kutipan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 slide-up">Kontak Kami</h2>
+                <div class="w-20 h-1 bg-red-400 mx-auto mb-6 slide-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto slide-up" style="animation-delay: 0.4s;">Punya
+                    pertanyaan atau siap untuk memulai proyek Anda? Hubungi tim kami hari ini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="slide-up">
+                    <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Anda</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                            <input type="tel" id="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+                        </div>
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Layanan</label>
+                            <select id="service"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
+                                <option value="">Pilih Layanan</option>
+                                <option value="offset">Offset Printing</option>
+                                <option value="digital">Digital Printing</option>
+                                <option value="packaging">Packaging</option>
+                                <option value="signage">Signage & Displays</option>
+                                <option value="books">Book Printing</option>
+                                <option value="promo">Promotional Items</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-red-400 text-white py-3 rounded-lg font-medium hover:bg-red-700 transition duration-300">Submit
+                            Request</button>
+                    </form>
+                </div>
+
+                <div class="slide-up" style="animation-delay: 0.2s;">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-red-400">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Lokasi Kami</h4>
+                                    <p class="text-gray-600">Serabi Kidul, Getassrabi, Kec. Gebog, Kabupaten Kudus, Jawa Tengah 59333
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-red-400">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">No. HP</h4>
+                                    <p class="text-gray-600">085974559988</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-red-400">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">daycompstc@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div
+                                        class="flex items-center justify-center h-10 w-10 rounded-full bg-blue-100 text-red-400">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-800">Business Hours</h4>
+                                    <p class="text-gray-600">Everyday: 09:00 AM - 21:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-800 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://facebook.com/p/Daycomp-Percetakan-100064260362219/?_rdc=1&_rdr"
+                                    class="h-10 w-10 rounded-full bg-blue-100 text-red-400 flex items-center justify-center hover:bg-blue-200 transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/daycomp_percetakan/"
+                                    class="h-10 w-10 rounded-full bg-blue-100 text-red-400 flex items-center justify-center hover:bg-blue-200 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Daycomp Percetakan</h3>
+                    <p class="text-gray-400">Your trusted partner for high-quality printing solutions since 2008.</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://facebook.com/p/Daycomp-Percetakan-100064260362219/?_rdc=1&_rdr" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/daycomp_percetakan/" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services"
+                                class="text-gray-400 hover:text-white transition duration-300">Layanan</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Tentang Kami</a>
+                        </li>
+                        <li><a href="#portfolio"
+                                class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="#contact"
+                                class="text-gray-400 hover:text-white transition duration-300">Kontak Kami</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Offset
+                                Printing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Digital
+                                Printing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Packaging</a>
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Signage</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Book Printing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Daycomp Percetakan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" type="application/javascript"></script>
+</body>
+
+</html>
